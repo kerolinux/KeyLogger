@@ -1,8 +1,4 @@
-Certainly! Here's a formatted description suitable for a GitHub repository:
-
----
-
-**Keylogger using pynput**
+## Keylogger using pynput
 
 **Description:**
 
