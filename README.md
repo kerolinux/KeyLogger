@@ -1,23 +1,48 @@
-## Keylogger using pynput
+# Keylogger Project
 
-**Description:**
+This project is intended for educational purposes only. Please use it responsibly and only on systems that you have explicit permission to monitor.
 
-This Python script is a basic keylogger created using the `pynput` library. When executed, the script captures key presses and logs them to a file named "keyfile.txt." The `keyPressed` function handles key press events, printing the pressed key and appending it to the log file. The script runs indefinitely until interrupted, making it a simple educational tool for understanding keylogging mechanisms in Python.
+## Introduction
 
-**Usage:**
+This repository contains a basic keylogger implementation in Python. It includes three main components:
 
-1. Install the required `pynput` library using `pip install pynput`.
-2. Run the script to start logging key presses to "keyfile.txt."
-3. Stop the script by interrupting it (e.g., pressing Ctrl+C).
+1. **Main Keylogger**: Captures keystrokes from the keyboard and sends them to a specified IP address and port.
+2. **Keylogger Reader**: Listens for incoming keystrokes on the specified IP address and port, then displays them.
+3. **Keylogger GUI**: Provides a graphical interface for starting and stopping the keylogger, displaying captured keystrokes, and indicating the status of the keylogger.
 
-**Disclaimer:**
+## Components
 
-This script is intended for educational purposes only. Unauthorized use of keyloggers or any form of spying software is illegal and unethical. Use this script responsibly and only on systems for which you have explicit permission.
+### Main Keylogger
 
-**Contributions:**
+The `main_keylogger.py` file contains the code for capturing keystrokes from the keyboard and sending them to a remote host.
 
-Contributions are welcome! If you find any issues or have improvements to suggest, feel free to create a pull request.
+### Keylogger Reader
 
-**License:**
+The `keylogger_reader.py` file contains the code for listening to incoming keystrokes on a specified IP address and port, then displaying them on the console.
+
+### Keylogger GUI
+
+The `keylogger_gui.py` file contains the code for a graphical user interface (GUI) that allows users to start and stop the keylogger, view captured keystrokes, and monitor the status of the keylogger.
+
+## Usage
+
+1. Clone this repository to your local machine.
+2. Ensure you have Python installed on your system.
+3. Install the required dependencies using `pip install -r requirements.txt`.
+4. Run the desired keylogger component:
+
+    - For the Main Keylogger: Run `python main_keylogger.py`.
+    - For the Keylogger Reader: Run `python keylogger_reader.py`.
+    - For the Keylogger GUI: Run `python keylogger_gui.py`.
+
+## Disclaimer
+
+This project is for educational purposes only. The authors are not responsible for any misuse of this software.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+
+## License
 
 This project is licensed under the [MIT License](LICENSE).
